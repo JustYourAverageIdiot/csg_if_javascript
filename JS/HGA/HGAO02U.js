@@ -18,4 +18,12 @@ function draw() {
   rect(0,0,80,80);
   translate(80 + 30,0);
   rect(0,0,80,80);  
+  translate(80 + 30,0);
+  rect(0,0,80,80);  
+  translate(80 + 30,0);
+  rect(0,0,80,80);  
+  translate(80 + 30,0);
+  rect(0,0,80,80);  
+  translate(80 + 30,0);
+  rect(0,0,80,80);  
 }
