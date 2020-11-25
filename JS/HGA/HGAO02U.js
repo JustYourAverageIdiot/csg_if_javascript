@@ -13,26 +13,16 @@ function draw() {
   strokeWeight(5);
   translate(30 + 40,100);
   rect(0,0,80,80);
-  rotate(15);
+
   translate(80 + 30,0);
+  rotate(15);
   rect(0,0,80,80);
-  rotate(15);
   translate(80 + 30,0);
+  rotate(15);
   rect(0,0,80,80);
-  rotate(15);
   translate(80 + 30,0);
-  rect(0,0,80,80);  
   rotate(15);
-  translate(80 + 30,0);
-  rect(0,0,80,80); 
-  rotate(15);
-  translate(80 + 30,0);
-  rect(0,0,80,80);  
-  rotate(15);
-  translate(80 + 30,0);
-  rect(0,0,80,80);  
-  rotate(15);
-  translate(80 + 30,0);
-  rect(0,0,80,80);  
-  rotate(15);
+  rect(0,0,80,80);
 }
+
+

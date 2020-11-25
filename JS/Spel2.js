@@ -1,5 +1,6 @@
 var xPlayer = 0 ;
 var yPlayer = 375 ;
+var Jump = 5 ; 
 var BGColor = 'silver';
 
 function setup() {
@@ -22,4 +23,5 @@ function draw() {
     if (keyIsDown(RIGHT_ARROW)) {
         xPlayer += 5;
     }
+
 }
