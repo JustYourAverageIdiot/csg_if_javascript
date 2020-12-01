@@ -4,7 +4,6 @@ var Jump = 5 ;
 var Run = 5 ; 
 var BGColor = 'silver';
 var PlayerColor = 'black';
-var RightArmColor = 'silver';
 
 function setup() {
   canvas = createCanvas(450,450);
@@ -19,8 +18,20 @@ function draw() {
     rect(0,425,450,25);
     fill (PlayerColor);
     rect(xPlayer,yPlayer,50,50);
-    fill(RightArmColor)
-    rect(xPlayer + 50,yPlayer + 15,30,20)
+
+    if (keyIsDown(RIGHT_ARROW)) {
+        RightArm();
+    }
+
+    else {
+    }
+
+    if (keyIsDown(LEFT_ARROW)) {
+        LeftArm();
+    }
+
+    else {
+    }
 
     if (keyIsDown(65)) {
         xPlayer -= Run;
@@ -48,13 +59,26 @@ function draw() {
         PlayerColor = 'black';
     }
 
-    if (keyIsDown(RIGHT_ARROW)) {
-        RightArmColor = PlayerColor;
-    }
-
-    else {
-        RightArmColor = 'silver';
-    }
-
 
 }
+    
+function RightArm() {
+    push();
+    noStroke();
+    fill(PlayerColor);
+    rect(xPlayer + 50,yPlayer + 15,30,20);
+    pop();
+}
+
+function LeftArm() {
+    push();
+    noStroke();
+    fill(PlayerColor);
+    rect(xPlayer - 30,yPlayer + 15,30,20);
+    pop();
+}
+
+
+
+
+
