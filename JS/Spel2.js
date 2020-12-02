@@ -13,6 +13,8 @@ function setup() {
 
 function draw() {
     background(BGColor);
+    yPlayer = constrain(yPlayer,0,375);
+    xPlayer = constrain(xPlayer,0,400);
     noStroke();
     fill ('black');
     rect(0,425,450,25);
